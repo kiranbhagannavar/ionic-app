@@ -6,16 +6,19 @@
           <div text-center>
             <h3>Welcome to Sample App</h3>
           </div>
+          <hr class="style14" />
           <div padding>
             <ion-item>
               <ion-label position="floating">Username</ion-label>
               <ion-input ngModel type="text" name="username"></ion-input>
             </ion-item>
+            <hr />
             <ion-item>
               <ion-label position="floating">Password</ion-label>
               <ion-input ngModel type="password" name="password"></ion-input>
             </ion-item>
           </div>
+          <hr />
           <div padding>
             <ion-button size="large" type="submit" expand="block">Login</ion-button>
           </div>
@@ -26,7 +29,7 @@
   <ion-row color="primary" justify-content-center>
     <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
       <div padding>
-        <ion-button size="large" expand="block" color="danger" (click)="registerModal()">Register</ion-button>
+        <ion-button size="large" expand="block" color="light" (click)="registerModal()">Register</ion-button>
       </div>
     </ion-col>
   </ion-row>

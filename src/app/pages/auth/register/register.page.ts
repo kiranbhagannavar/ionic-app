@@ -37,7 +37,7 @@ export class RegisterPage implements OnInit {
   }
 
   register(form: NgForm) {
-    if (form.value.fName == '' || form.value.lName == '' || form.value.email == '' || form.value.password == '') {
+    if (form.value.username == '' || form.value.email == '' || form.value.password == '') {
       this.presentAlert();
     } else {
       this.dismissRegister();
