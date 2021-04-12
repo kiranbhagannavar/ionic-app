@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <ion-title>
+          Employee List
+        </ion-title>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <ion-button size="small" (click)="logout()">Logout</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar placeholder="Search Here" [(ngModel)]="filterTerm" animated="true"></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor="let data of userRecords | filter:filterTerm">
+      <ion-label>{{data.id}}</ion-label>
+      <ion-label>{{data.name}}</ion-label>
+      <ion-label>{{data.gender}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
